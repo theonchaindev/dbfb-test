@@ -1,11 +1,11 @@
 import UtilityBar from "../components/UtilityBar";
 import Navigation from "../components/Navigation";
 import HeroV3 from "../components/HeroV3";
-import Solutions from "../components/Solutions";
-import WhyDBFB from "../components/WhyDBFB";
-import Sectors from "../components/Sectors";
-import Testimonials from "../components/Testimonials";
-import CTASection from "../components/CTASection";
+import SolutionsV3 from "../components/SolutionsV3";
+import WhyDBFBV3 from "../components/WhyDBFBV3";
+import SectorsV3 from "../components/SectorsV3";
+import TestimonialsV3 from "../components/TestimonialsV3";
+import CTASectionV3 from "../components/CTASectionV3";
 import Footer from "../components/Footer";
 
 export default function HomeV3() {
@@ -19,11 +19,11 @@ export default function HomeV3() {
 
       <main>
         <HeroV3 />
-        <Solutions />
-        <WhyDBFB />
-        <Sectors />
-        <Testimonials />
-        <CTASection />
+        <SolutionsV3 />
+        <WhyDBFBV3 />
+        <SectorsV3 />
+        <TestimonialsV3 />
+        <CTASectionV3 />
       </main>
 
       <Footer />
