@@ -12,6 +12,7 @@ const stats = [
 export default function StatsV4() {
   return (
     <section className="bg-white border-y border-gray-100">
+      <div className="max-w-7xl mx-auto px-6 lg:px-10">
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-px bg-gray-100">
         {stats.map((stat, i) => (
           <motion.div
@@ -34,6 +35,7 @@ export default function StatsV4() {
             <div className="w-6 h-0.5 bg-[#EB5E5A] mt-4" />
           </motion.div>
         ))}
+      </div>
       </div>
     </section>
   );
