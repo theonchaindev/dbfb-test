@@ -56,7 +56,7 @@ export default function HeroV4() {
                   transition={{ duration: 0.8, delay: 0.08 + i * 0.18, ease: "easeOut" }}
                   className="font-black leading-none block"
                   style={{
-                    fontSize: "clamp(3.8rem, 10.5vw, 10rem)",
+                    fontSize: "clamp(1.8rem, 4vw, 4.5rem)",
                     letterSpacing: "-0.03em",
                     color: line === "BUSINESS" ? "#EB5E5A" : "#ffffff",
                   }}
