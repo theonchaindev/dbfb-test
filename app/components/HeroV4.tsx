@@ -14,7 +14,7 @@ const services = [
 
 export default function HeroV4() {
   return (
-    <section className="relative min-h-screen flex flex-col justify-between overflow-hidden" style={{ background: "#170F49" }}>
+    <section className="relative h-screen flex flex-col justify-between overflow-hidden" style={{ background: "#170F49" }}>
 
       {/* Subtle grid texture */}
       <div
