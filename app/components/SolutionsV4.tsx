@@ -51,7 +51,7 @@ const solutions = [
 
 export default function SolutionsV4() {
   return (
-    <section className="py-24 lg:py-32" style={{ background: "#170F49" }}>
+    <section className="py-24 lg:py-32 bg-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
 
         {/* Header */}
@@ -72,7 +72,7 @@ export default function SolutionsV4() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: 0.07 }}
-              className="text-4xl lg:text-5xl font-bold text-white leading-tight"
+              className="text-4xl lg:text-5xl font-bold text-[#170F49] leading-tight"
             >
               Our solutions
             </motion.h2>
@@ -82,8 +82,7 @@ export default function SolutionsV4() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.4, delay: 0.12 }}
-            className="text-sm leading-relaxed max-w-xs lg:text-right"
-            style={{ color: "rgba(255,255,255,0.4)" }}
+            className="text-sm leading-relaxed max-w-xs lg:text-right text-gray-400"
           >
             Six service areas — all delivered and supported by our UK team.
           </motion.p>
@@ -147,8 +146,8 @@ export default function SolutionsV4() {
         >
           <Link
             href="/solutions"
-            className="inline-flex items-center gap-2 text-sm font-semibold px-6 py-3 rounded-lg border transition-all duration-200 hover:bg-white/5"
-            style={{ color: "rgba(255,255,255,0.6)", borderColor: "rgba(255,255,255,0.12)" }}
+            className="inline-flex items-center gap-2 text-sm font-semibold px-6 py-3 rounded-lg border transition-all duration-200 hover:bg-gray-50"
+            style={{ color: "#170F49", borderColor: "rgba(23,15,73,0.2)" }}
           >
             View all solutions <ArrowUpRight size={14} />
           </Link>
