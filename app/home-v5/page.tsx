@@ -1,8 +1,7 @@
 import UtilityBar from "../components/UtilityBar";
 import Navigation from "../components/Navigation";
 import HeroV4 from "../components/HeroV4";
-import StatsV4 from "../components/StatsV4";
-import Solutions from "../components/Solutions";
+import SolutionsV4 from "../components/SolutionsV4";
 import WhyDBFB from "../components/WhyDBFB";
 import Sectors from "../components/Sectors";
 import Testimonials from "../components/Testimonials";
@@ -20,8 +19,7 @@ export default function HomeV5() {
 
       <main>
         <HeroV4 />
-        <StatsV4 />
-        <Solutions />
+        <SolutionsV4 />
         <WhyDBFB />
         <Sectors />
         <Testimonials />
