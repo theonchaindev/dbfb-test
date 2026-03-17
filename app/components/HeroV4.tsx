@@ -33,21 +33,21 @@ export default function HeroV4() {
 
       {/* Content */}
       <div className="relative flex-1 flex items-end">
-        <div className="max-w-7xl mx-auto px-6 lg:px-10 pt-44 pb-12 w-full">
+        <div className="max-w-7xl mx-auto px-6 lg:px-10 pt-24 md:pt-36 lg:pt-44 pb-8 lg:pb-12 w-full">
 
           {/* Eyebrow */}
           <motion.p
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.45 }}
-            className="text-xs font-bold uppercase tracking-[0.25em] mb-10"
+            className="text-xs font-bold uppercase tracking-[0.15em] mb-6 lg:mb-10"
             style={{ color: "#EB5E5A" }}
           >
             UK Telecoms &amp; IT Partner
           </motion.p>
 
           {/* Headline — line by line slide up */}
-          <div className="mb-12">
+          <div className="mb-8 lg:mb-12">
             {lines.map((line, i) => (
               <div key={line} style={{ overflow: "hidden", paddingTop: "0.06em", paddingBottom: "0.06em" }}>
                 <motion.p

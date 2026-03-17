@@ -56,7 +56,7 @@ export default function Hero() {
       />
 
       {/* Content */}
-      <div className="relative max-w-7xl mx-auto px-6 pt-36 pb-24 w-full">
+      <div className="relative max-w-7xl mx-auto px-6 pt-24 md:pt-32 lg:pt-36 pb-16 lg:pb-24 w-full">
         <div className="max-w-2xl">
 
           {/* Headline */}
@@ -65,9 +65,9 @@ export default function Hero() {
             variants={fadeUp}
             initial="hidden"
             animate="visible"
-            className="text-5xl lg:text-6xl xl:text-7xl font-bold leading-[1.08] tracking-tight text-white mb-6"
+            className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold leading-[1.08] tracking-tight text-white mb-6"
           >
-            <span className="whitespace-nowrap">Powering your <span className="text-[#EB5E5A]">business</span></span>
+            <span>Powering your <span className="text-[#EB5E5A]">business</span></span>
             <br />
             with technology
           </motion.h1>
@@ -113,7 +113,7 @@ export default function Hero() {
             variants={fadeUp}
             initial="hidden"
             animate="visible"
-            className="flex items-center gap-4"
+            className="flex flex-wrap items-center gap-3"
           >
             {badges.map((badge, i) => (
               <div

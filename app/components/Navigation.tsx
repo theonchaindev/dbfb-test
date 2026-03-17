@@ -145,7 +145,7 @@ export default function Navigation({ forceActive = false }: { forceActive?: bool
     </AnimatePresence>
 
     <header
-      className="fixed top-8 left-0 right-0 z-50 transition-all duration-300"
+      className="fixed top-0 md:top-8 left-0 right-0 z-50 transition-all duration-300"
       style={
         isActive
           ? {
@@ -316,7 +316,7 @@ export default function Navigation({ forceActive = false }: { forceActive?: bool
               animate={{ x: 0 }}
               exit={{ x: "100%" }}
               transition={{ duration: 0.3, ease: "easeInOut" }}
-              className="fixed top-0 right-0 bottom-0 w-80 lg:hidden overflow-y-auto"
+              className="fixed top-0 right-0 bottom-0 w-full max-w-xs lg:hidden overflow-y-auto"
               style={{
                 zIndex: 50,
                 background: "rgba(26, 22, 56, 0.98)",

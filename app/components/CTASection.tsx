@@ -81,7 +81,7 @@ export default function CTASection() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.4 }}
-          className="mt-12 flex flex-wrap items-center justify-center gap-6 text-xs text-white/40"
+          className="mt-12 flex flex-wrap items-center justify-center gap-3 sm:gap-6 text-xs text-white/40"
         >
           {["No long-term lock-in", "Free initial consultation", "UK-based support team", "30-day onboarding guarantee"].map((item) => (
             <span key={item} className="flex items-center gap-1.5">

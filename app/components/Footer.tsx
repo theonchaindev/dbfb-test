@@ -49,9 +49,9 @@ export default function Footer() {
     >
       <div className="max-w-7xl mx-auto px-6">
         {/* Top row */}
-        <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 mb-12">
+        <div className="grid grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12 mb-12">
           {/* Brand column */}
-          <div className="lg:col-span-1">
+          <div className="col-span-2 lg:col-span-1">
             <Link href="/" className="flex items-center mb-5">
               <img src="/logo.png" alt="DBFB" className="h-7 w-auto" />
             </Link>

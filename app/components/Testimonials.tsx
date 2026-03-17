@@ -105,7 +105,7 @@ export default function Testimonials() {
                 className="absolute inset-0 flex flex-col items-center justify-center"
               >
                 <Quote size={28} className="text-[#359D9E]/25 mb-5" />
-                <p className="text-xl lg:text-2xl font-medium text-[#1E183D] leading-relaxed mb-7 italic">
+                <p className="text-lg sm:text-xl lg:text-2xl font-medium text-[#1E183D] leading-relaxed mb-7 italic">
                   &ldquo;{testimonials[current].quote}&rdquo;
                 </p>
                 <div>

@@ -94,14 +94,14 @@ export default function WhyDBFB() {
           {stats.map((stat, i) => (
             <div
               key={stat.label}
-              className="flex flex-col items-center justify-center py-10 px-6 text-center"
+              className="flex flex-col items-center justify-center py-7 px-4 lg:py-10 lg:px-6 text-center"
               style={{
                 background: i % 2 === 0 ? "#FAFAFA" : "#ffffff",
                 borderRight: i < stats.length - 1 ? "1px solid #EAEAF0" : undefined,
               }}
             >
               <p
-                className="text-4xl lg:text-5xl font-black leading-none mb-2"
+                className="text-3xl lg:text-5xl font-black leading-none mb-2"
                 style={{ color: stat.accent }}
               >
                 {stat.value}

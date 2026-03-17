@@ -21,9 +21,9 @@ export default function StatsV4() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.4, delay: i * 0.08 }}
-            className="bg-white flex flex-col items-start p-8 lg:p-10 group hover:bg-[#170F49] transition-colors duration-300"
+            className="bg-white flex flex-col items-start p-5 sm:p-8 lg:p-10 group hover:bg-[#170F49] transition-colors duration-300"
           >
-            <p className="text-4xl lg:text-5xl font-black leading-none tabular-nums mb-3 text-[#170F49] group-hover:text-white transition-colors duration-300">
+            <p className="text-3xl sm:text-4xl lg:text-5xl font-black leading-none tabular-nums mb-3 text-[#170F49] group-hover:text-white transition-colors duration-300">
               {stat.value}
             </p>
             <p className="text-sm font-semibold text-gray-700 mb-1.5 group-hover:text-white/80 transition-colors duration-300">

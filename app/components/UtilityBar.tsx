@@ -4,7 +4,7 @@ import { Mail, Phone } from "lucide-react";
 
 export default function UtilityBar() {
   return (
-    <div className="w-full py-2 px-4" style={{ background: "#EB5E5A" }}>
+    <div className="hidden md:block w-full py-2 px-4" style={{ background: "#EB5E5A" }}>
       <div className="max-w-7xl mx-auto flex justify-end items-center gap-6">
         <a
           href="mailto:support@dbfb.co.uk"

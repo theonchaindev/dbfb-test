@@ -142,7 +142,7 @@ export default function Sectors() {
               <Link
                 href={sector.href}
                 className="group relative flex flex-col justify-end overflow-hidden rounded-2xl transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
-                style={{ height: "420px", boxShadow: "0 4px 20px rgba(0,0,0,0.1)" }}
+                style={{ height: "clamp(280px, 40vw, 420px)", boxShadow: "0 4px 20px rgba(0,0,0,0.1)" }}
               >
                 <img
                   src={sector.image}
@@ -223,9 +223,8 @@ export default function Sectors() {
                 href={sector.href}
                 className="group relative flex flex-col justify-end overflow-hidden rounded-2xl flex-shrink-0 transition-all duration-300 hover:-translate-y-1"
                 style={{
-                  width: "calc(25% - 15px)",
-                  minWidth: "220px",
-                  height: "220px",
+                  width: "clamp(200px, 40vw, 280px)",
+                  height: "200px",
                   boxShadow: "0 2px 12px rgba(0,0,0,0.08)",
                   scrollSnapAlign: "start",
                 }}
