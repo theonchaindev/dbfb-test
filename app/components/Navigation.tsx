@@ -82,12 +82,12 @@ const bottomCards = [
   { icon: Star,      label: "Features",   desc: "Explore what's included" },
   { icon: Layers,    label: "Use Cases",   desc: "See how it works" },
   { icon: BookOpen,  label: "Resources",   desc: "Guides & whitepapers" },
-  { icon: Info,      label: "About DBFB",  desc: "Our story & mission" },
+  { icon: Info,      label: "About dbfb",  desc: "Our story & mission" },
 ];
 
 const navLinks = [
   { label: "Sectors",          href: "/sectors" },
-  { label: "Why DBFB?",        href: "/why-dbfb" },
+  { label: "Why dbfb?",        href: "/why-dbfb" },
   { label: "Insights & Blogs", href: "/insights" },
   { label: "Contact us",       href: "/contact" },
 ];
@@ -171,7 +171,7 @@ export default function Navigation({ forceActive = false }: { forceActive?: bool
           {/* Logo */}
           <div className="flex-1">
             <Link href="/" className="inline-flex items-center">
-              <img src="/logo.png" alt="DBFB" className="h-8 w-auto" />
+              <img src="/logo.png" alt="dbfb" className="h-8 w-auto" />
             </Link>
           </div>
 
@@ -330,7 +330,7 @@ export default function Navigation({ forceActive = false }: { forceActive?: bool
             >
               {/* Close button */}
               <div className="flex items-center justify-between px-6 h-16 border-b border-white/10">
-                <img src="/logo.png" alt="DBFB" className="h-7 w-auto" />
+                <img src="/logo.png" alt="dbfb" className="h-7 w-auto" />
                 <button
                   onClick={() => setMobileOpen(false)}
                   className="text-white p-2 hover:bg-white/10 rounded-lg transition-colors"

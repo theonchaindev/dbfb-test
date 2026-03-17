@@ -13,8 +13,8 @@ const footerLinks = {
     { label: "Operational Enhancements", href: "/solutions/operations" },
   ],
   Company: [
-    { label: "About DBFB", href: "/about" },
-    { label: "Why DBFB?", href: "/why-dbfb" },
+    { label: "About dbfb", href: "/about" },
+    { label: "Why dbfb?", href: "/why-dbfb" },
     { label: "Careers", href: "/careers" },
     { label: "Partners", href: "/partners" },
     { label: "News", href: "/news" },
@@ -53,7 +53,7 @@ export default function Footer() {
           {/* Brand column */}
           <div className="col-span-2 lg:col-span-1">
             <Link href="/" className="flex items-center mb-5">
-              <img src="/logo.png" alt="DBFB" className="h-7 w-auto" />
+              <img src="/logo.png" alt="dbfb" className="h-7 w-auto" />
             </Link>
             <p className="text-xs text-white/40 leading-relaxed mb-6">
               UK-based telecommunications and business technology provider. Powering serious businesses since 2003.
@@ -108,7 +108,7 @@ export default function Footer() {
         {/* Bottom row */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-white/30">
-            &copy; {new Date().getFullYear()} DBFB Ltd. All rights reserved.
+            &copy; {new Date().getFullYear()} dbfb Ltd. All rights reserved.
             Registered in England & Wales.
           </p>
           <div className="flex items-center gap-5">

@@ -10,7 +10,7 @@ const plusJakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "DBFB – Business Technology & Telecoms",
+  title: "dbfb – Business Technology & Telecoms",
   description: "UK-based telecommunications and business technology provider. Cloud communications, connectivity, mobile, IT services and more.",
 };
 

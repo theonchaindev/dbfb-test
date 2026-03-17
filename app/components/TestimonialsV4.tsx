@@ -6,7 +6,7 @@ const logos = ["Meridian Group", "Apex Construction", "Northfield Health Trust",
 
 const testimonials = [
   {
-    quote: "DBFB transformed our communications infrastructure. The migration was seamless and the ongoing support has been exceptional — a genuine partner, not just a vendor.",
+    quote: "dbfb transformed our communications infrastructure. The migration was seamless and the ongoing support has been exceptional — a genuine partner, not just a vendor.",
     name: "Sarah Mitchell",
     role: "IT Director",
     company: "Meridian Group",

@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 
 const featured = {
-  quote: "DBFB transformed our communications infrastructure. The migration was seamless and the ongoing support has been exceptional — a genuine partner, not just a vendor.",
+  quote: "dbfb transformed our communications infrastructure. The migration was seamless and the ongoing support has been exceptional — a genuine partner, not just a vendor.",
   name: "Sarah Mitchell",
   role: "IT Director",
   company: "Meridian Group",
@@ -23,7 +23,7 @@ const others = [
     company: "Northfield Health Trust",
   },
   {
-    quote: "We evaluated six providers. DBFB were the only ones who properly understood our regulatory requirements from day one.",
+    quote: "We evaluated six providers. dbfb were the only ones who properly understood our regulatory requirements from day one.",
     name: "Tom Barrett",
     role: "Head of IT",
     company: "Kingston Finance",

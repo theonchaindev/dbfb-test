@@ -68,7 +68,7 @@ export default function WhyDBFB() {
               transition={{ duration: 0.4, delay: 0.07 }}
               className="text-4xl lg:text-5xl font-bold text-[#1E183D] leading-tight"
             >
-              Why businesses<br />choose <span className="text-[#EB5E5A]">DBFB</span>
+              Why businesses<br />choose <span className="text-[#EB5E5A]">dbfb</span>
             </motion.h2>
           </div>
           <motion.p

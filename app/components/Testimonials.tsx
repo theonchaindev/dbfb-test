@@ -6,19 +6,19 @@ import { Quote } from "lucide-react";
 
 const testimonials = [
   {
-    quote: "DBFB transformed our communications infrastructure. The migration was seamless and the ongoing support has been exceptional — a genuine partner, not just a vendor.",
+    quote: "dbfb transformed our communications infrastructure. The migration was seamless and the ongoing support has been exceptional — a genuine partner, not just a vendor.",
     name: "Sarah Mitchell",
     role: "IT Director",
     company: "Meridian Group",
   },
   {
-    quote: "We needed a telecoms partner that could scale with us. DBFB delivered enterprise-grade connectivity across all 12 of our sites within 6 weeks. Outstanding.",
+    quote: "We needed a telecoms partner that could scale with us. dbfb delivered enterprise-grade connectivity across all 12 of our sites within 6 weeks. Outstanding.",
     name: "James Hollingsworth",
     role: "Operations Manager",
     company: "Apex Construction",
   },
   {
-    quote: "From initial consultation to full deployment, the DBFB team demonstrated deep technical knowledge and genuine care for our business outcomes.",
+    quote: "From initial consultation to full deployment, the dbfb team demonstrated deep technical knowledge and genuine care for our business outcomes.",
     name: "Dr. Rachel Chen",
     role: "Head of Digital",
     company: "Northfield Health Trust",

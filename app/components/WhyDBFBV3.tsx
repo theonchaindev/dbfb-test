@@ -55,7 +55,7 @@ export default function WhyDBFBV3() {
               transition={{ duration: 0.4 }}
               className="text-xs font-semibold text-[#EB5E5A] uppercase tracking-widest mb-4"
             >
-              Why DBFB
+              Why dbfb
             </motion.p>
             <motion.h2
               initial={{ opacity: 0, y: 12 }}

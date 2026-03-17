@@ -48,7 +48,7 @@ export default function CTASectionV4() {
           className="text-base mb-10 max-w-lg mx-auto leading-relaxed"
           style={{ color: "rgba(255,255,255,0.45)" }}
         >
-          Join 2,400+ UK businesses that trust DBFB for telecoms, cloud and IT.
+          Join 2,400+ UK businesses that trust dbfb for telecoms, cloud and IT.
           Let&apos;s build something great together.
         </motion.p>
 

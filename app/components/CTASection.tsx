@@ -48,7 +48,7 @@ export default function CTASection() {
           transition={{ duration: 0.5, delay: 0.16 }}
           className="text-lg text-[#EAEAF0]/60 mb-12 max-w-xl mx-auto leading-relaxed"
         >
-          Join 2,400+ UK businesses that trust DBFB for their telecoms, cloud,
+          Join 2,400+ UK businesses that trust dbfb for their telecoms, cloud,
           and IT needs. Let&apos;s build something great together.
         </motion.p>
 
