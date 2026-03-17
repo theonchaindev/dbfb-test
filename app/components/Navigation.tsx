@@ -93,10 +93,12 @@ const navLinks = [
 ];
 
 export default function Navigation({ forceActive = false }: { forceActive?: boolean }) {
-  const [scrolled,       setScrolled]       = useState(false);
-  const [navHovered,     setNavHovered]      = useState(false);
-  const [solutionsOpen,  setSolutionsOpen]   = useState(false);
-  const [mobileOpen,     setMobileOpen]      = useState(false);
+  const [scrolled,          setScrolled]          = useState(false);
+  const [navHovered,        setNavHovered]         = useState(false);
+  const [solutionsOpen,     setSolutionsOpen]      = useState(false);
+  const [mobileOpen,        setMobileOpen]         = useState(false);
+  const [mobileSolOpen,     setMobileSolOpen]      = useState(false);
+  const [openCategory,      setOpenCategory]       = useState<string | null>(null);
   const closeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => {
@@ -340,37 +342,98 @@ export default function Navigation({ forceActive = false }: { forceActive?: bool
                 </button>
               </div>
 
-              <div className="p-6">
-                <p className="text-xs font-semibold text-[#359D9E] uppercase tracking-widest mb-4">
-                  Solutions
-                </p>
-                <div className="space-y-1 mb-6">
-                  {megaColumns.map((col) => (
-                    <Link
-                      key={col.title}
-                      href={col.href}
-                      onClick={() => setMobileOpen(false)}
-                      className="block px-3 py-2.5 text-sm font-medium text-white/80 hover:text-white hover:bg-white/5 rounded-xl transition-colors"
-                    >
-                      {col.title}
-                    </Link>
-                  ))}
-                </div>
+              <div className="p-4">
 
-                <div className="border-t border-white/10 pt-6 space-y-1">
+                {/* Solutions accordion */}
+                <button
+                  onClick={() => { setMobileSolOpen(!mobileSolOpen); setOpenCategory(null); }}
+                  className="w-full flex items-center justify-between px-3 py-3 text-sm font-semibold text-white hover:bg-white/5 rounded-xl transition-colors"
+                >
+                  Solutions
+                  <ChevronDown
+                    size={16}
+                    className={`text-white/50 transition-transform duration-200 ${mobileSolOpen ? "rotate-180" : ""}`}
+                  />
+                </button>
+
+                <AnimatePresence initial={false}>
+                  {mobileSolOpen && (
+                    <motion.div
+                      initial={{ height: 0, opacity: 0 }}
+                      animate={{ height: "auto", opacity: 1 }}
+                      exit={{ height: 0, opacity: 0 }}
+                      transition={{ duration: 0.25, ease: "easeInOut" }}
+                      className="overflow-hidden"
+                    >
+                      <div className="ml-3 border-l border-white/10 pl-3 mb-2 space-y-0.5">
+                        {megaColumns.map((col) => (
+                          <div key={col.title}>
+                            {/* Category row */}
+                            <button
+                              onClick={() => setOpenCategory(openCategory === col.title ? null : col.title)}
+                              className="w-full flex items-center justify-between px-3 py-2.5 text-sm font-medium text-white/70 hover:text-white hover:bg-white/5 rounded-lg transition-colors text-left"
+                            >
+                              {col.title}
+                              <ChevronDown
+                                size={13}
+                                className={`text-white/30 flex-shrink-0 transition-transform duration-200 ${openCategory === col.title ? "rotate-180" : ""}`}
+                              />
+                            </button>
+
+                            {/* Sub-links */}
+                            <AnimatePresence initial={false}>
+                              {openCategory === col.title && (
+                                <motion.div
+                                  initial={{ height: 0, opacity: 0 }}
+                                  animate={{ height: "auto", opacity: 1 }}
+                                  exit={{ height: 0, opacity: 0 }}
+                                  transition={{ duration: 0.2, ease: "easeInOut" }}
+                                  className="overflow-hidden"
+                                >
+                                  <div className="ml-3 border-l border-white/10 pl-3 pb-1 space-y-0.5">
+                                    <Link
+                                      href={col.href}
+                                      onClick={() => setMobileOpen(false)}
+                                      className="block px-3 py-2 text-xs font-semibold text-[#359D9E] hover:text-white transition-colors rounded-lg hover:bg-white/5"
+                                    >
+                                      View all →
+                                    </Link>
+                                    {col.links.map((link) => (
+                                      <Link
+                                        key={link}
+                                        href="#"
+                                        onClick={() => setMobileOpen(false)}
+                                        className="block px-3 py-2 text-xs text-white/50 hover:text-white/90 hover:bg-white/5 rounded-lg transition-colors"
+                                      >
+                                        {link}
+                                      </Link>
+                                    ))}
+                                  </div>
+                                </motion.div>
+                              )}
+                            </AnimatePresence>
+                          </div>
+                        ))}
+                      </div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+
+                {/* Other nav links */}
+                <div className="mt-1 space-y-0.5">
                   {navLinks.map((link) => (
                     <Link
                       key={link.label}
                       href={link.href}
                       onClick={() => setMobileOpen(false)}
-                      className="block px-3 py-2.5 text-sm font-medium text-white/80 hover:text-white hover:bg-white/5 rounded-xl transition-colors"
+                      className="block px-3 py-3 text-sm font-medium text-white/80 hover:text-white hover:bg-white/5 rounded-xl transition-colors"
                     >
                       {link.label}
                     </Link>
                   ))}
                 </div>
 
-                <div className="mt-6 space-y-3">
+                <div className="space-y-3">
                   <Link
                     href="/billing"
                     onClick={() => setMobileOpen(false)}
