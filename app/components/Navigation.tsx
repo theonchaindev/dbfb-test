@@ -184,8 +184,6 @@ export default function Navigation({ forceActive = false }: { forceActive?: bool
               onMouseLeave={scheduleSolutionsClose}
               className="flex items-center gap-1.5 px-4 py-1.5 text-sm font-medium rounded-lg border transition-all duration-200"
               style={{ color: "#EBE6DE", borderColor: "rgba(235,230,222,0.3)" }}
-              onMouseEnter={e => { (e.currentTarget as HTMLButtonElement).style.borderColor = "rgba(235,230,222,0.7)"; }}
-              onMouseLeave={e => { (e.currentTarget as HTMLButtonElement).style.borderColor = "rgba(235,230,222,0.3)"; }}
             >
               Solutions
               <ChevronDown
