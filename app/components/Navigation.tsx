@@ -157,11 +157,11 @@ export default function Navigation({ forceActive = false }: { forceActive?: bool
         style={
           isActive
             ? {
-                background: "rgba(30, 24, 61, 0.92)",
-                backdropFilter: "blur(24px)",
-                WebkitBackdropFilter: "blur(24px)",
-                borderBottom: "1px solid rgba(255,255,255,0.08)",
-                boxShadow: "0 8px 32px rgba(0,0,0,0.25)",
+                background: "rgba(17, 17, 17, 0.96)",
+                backdropFilter: "blur(20px)",
+                WebkitBackdropFilter: "blur(20px)",
+                borderBottom: "1px solid rgba(235,230,222,0.08)",
+                boxShadow: "0 8px 40px rgba(0,0,0,0.4)",
               }
             : { background: "transparent" }
         }
@@ -182,7 +182,10 @@ export default function Navigation({ forceActive = false }: { forceActive?: bool
             <button
               onMouseEnter={openSolutions}
               onMouseLeave={scheduleSolutionsClose}
-              className="flex items-center gap-1.5 px-4 py-1.5 text-sm font-medium text-white rounded-lg border border-white/30 hover:border-white/60 transition-all duration-200"
+              className="flex items-center gap-1.5 px-4 py-1.5 text-sm font-medium rounded-lg border transition-all duration-200"
+              style={{ color: "#EBE6DE", borderColor: "rgba(235,230,222,0.3)" }}
+              onMouseEnter={e => { (e.currentTarget as HTMLButtonElement).style.borderColor = "rgba(235,230,222,0.7)"; }}
+              onMouseLeave={e => { (e.currentTarget as HTMLButtonElement).style.borderColor = "rgba(235,230,222,0.3)"; }}
             >
               Solutions
               <ChevronDown
@@ -195,7 +198,10 @@ export default function Navigation({ forceActive = false }: { forceActive?: bool
               <Link
                 key={link.label}
                 href={link.href}
-                className="px-4 py-2 text-sm font-medium text-white/80 hover:text-white transition-colors duration-200"
+                className="px-4 py-2 text-sm font-medium transition-colors duration-200"
+                style={{ color: "rgba(235,230,222,0.65)" }}
+                onMouseEnter={e => { (e.currentTarget as HTMLAnchorElement).style.color = "#EBE6DE"; }}
+                onMouseLeave={e => { (e.currentTarget as HTMLAnchorElement).style.color = "rgba(235,230,222,0.65)"; }}
               >
                 {link.label}
               </Link>
@@ -206,7 +212,8 @@ export default function Navigation({ forceActive = false }: { forceActive?: bool
           <div className="flex-1 hidden lg:flex items-center justify-end gap-3">
             <Link
               href="/billing"
-              className="px-4 py-1.5 text-sm font-medium text-white border border-white/30 rounded-lg hover:border-white/60 transition-all duration-200"
+              className="px-4 py-1.5 text-sm font-medium rounded-lg transition-all duration-200"
+              style={{ color: "#EBE6DE", border: "1px solid rgba(235,230,222,0.25)" }}
             >
               Billing Portal
             </Link>
@@ -324,10 +331,10 @@ export default function Navigation({ forceActive = false }: { forceActive?: bool
               className="fixed top-0 right-0 bottom-0 w-full max-w-xs lg:hidden overflow-y-auto"
               style={{
                 zIndex: 999,
-                background: "rgba(26, 22, 56, 0.98)",
+                background: "rgba(17, 17, 17, 0.99)",
                 backdropFilter: "blur(24px)",
                 WebkitBackdropFilter: "blur(24px)",
-                borderLeft: "1px solid rgba(255,255,255,0.1)",
+                borderLeft: "1px solid rgba(235,230,222,0.08)",
               }}
             >
               {/* Close button */}

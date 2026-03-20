@@ -11,9 +11,9 @@ const stats = [
 
 export default function StatsV4() {
   return (
-    <section className="bg-white border-y border-gray-100">
+    <section style={{ background: "#EBE6DE" }}>
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-px bg-gray-100">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-px" style={{ background: "rgba(17,17,17,0.1)" }}>
         {stats.map((stat, i) => (
           <motion.div
             key={stat.label}
@@ -21,15 +21,18 @@ export default function StatsV4() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.4, delay: i * 0.08 }}
-            className="bg-white flex flex-col items-start p-5 sm:p-8 lg:p-10 group hover:bg-[#170F49] transition-colors duration-300"
+            className="flex flex-col items-start p-5 sm:p-8 lg:p-10 group transition-colors duration-300"
+            style={{ background: "#EBE6DE" }}
+            onMouseEnter={e => { (e.currentTarget as HTMLDivElement).style.background = "#111111"; }}
+            onMouseLeave={e => { (e.currentTarget as HTMLDivElement).style.background = "#EBE6DE"; }}
           >
-            <p className="text-3xl sm:text-4xl lg:text-5xl font-black leading-none tabular-nums mb-3 text-[#170F49] group-hover:text-white transition-colors duration-300">
+            <p className="text-3xl sm:text-4xl lg:text-5xl font-black leading-none tabular-nums mb-3 transition-colors duration-300 group-hover:text-white" style={{ color: "#111111" }}>
               {stat.value}
             </p>
-            <p className="text-sm font-semibold text-gray-700 mb-1.5 group-hover:text-white/80 transition-colors duration-300">
+            <p className="text-sm font-semibold mb-1.5 transition-colors duration-300 group-hover:text-white/80" style={{ color: "rgba(17,17,17,0.7)" }}>
               {stat.label}
             </p>
-            <p className="text-xs text-gray-400 group-hover:text-white/40 transition-colors duration-300">
+            <p className="text-xs transition-colors duration-300 group-hover:text-white/40" style={{ color: "rgba(17,17,17,0.4)" }}>
               {stat.detail}
             </p>
             <div className="w-6 h-0.5 bg-[#EB5E5A] mt-4" />

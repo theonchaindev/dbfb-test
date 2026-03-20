@@ -43,8 +43,8 @@ export default function Footer() {
     <footer
       className="relative pt-16 pb-8"
       style={{
-        background: "#15112e",
-        borderTop: "1px solid rgba(255,255,255,0.06)",
+        background: "#111111",
+        borderTop: "1px solid rgba(235,230,222,0.08)",
       }}
     >
       <div className="max-w-7xl mx-auto px-6">
@@ -61,14 +61,14 @@ export default function Footer() {
             <div className="space-y-3">
               <a
                 href="mailto:support@dbfb.co.uk"
-                className="flex items-center gap-2 text-xs text-white/40 hover:text-[#359D9E] transition-colors"
+                className="flex items-center gap-2 text-xs text-white/40 hover:text-[#EBE6DE] transition-colors"
               >
                 <Mail size={13} />
                 support@dbfb.co.uk
               </a>
               <a
                 href="tel:03301359900"
-                className="flex items-center gap-2 text-xs text-white/40 hover:text-[#359D9E] transition-colors"
+                className="flex items-center gap-2 text-xs text-white/40 hover:text-[#EBE6DE] transition-colors"
               >
                 <Phone size={13} />
                 0330 135 9900
@@ -103,7 +103,7 @@ export default function Footer() {
         </div>
 
         {/* Divider */}
-        <div className="h-px bg-white/6 mb-8" />
+        <div className="h-px mb-8" style={{ background: "rgba(235,230,222,0.1)" }} />
 
         {/* Bottom row */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
@@ -112,7 +112,7 @@ export default function Footer() {
             Registered in England & Wales.
           </p>
           <div className="flex items-center gap-5">
-            {["Privacy", "Terms", "Cookies"].map((item) => (
+            {["Privacy", "Terms"].map((item) => (
               <Link
                 key={item}
                 href={`/legal/${item.toLowerCase()}`}
